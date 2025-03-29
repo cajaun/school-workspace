@@ -1,0 +1,4 @@
+0
+SMARTHOME
+1
+showAllThings

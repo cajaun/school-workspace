@@ -1,0 +1,119 @@
+======================================
+Pro2[$50000] planning a party with 20 people on day 1
+Approval Certificate #0 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$49000] planning a party with 200 people on day 2
+Didn't work out
+--------------------------------------
+======================================
+Pro2[$49000] planning a training event with 10 people on day 3
+Approval Certificate #2 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$48300] planning a sports event with 20 competitors and 10 others on day 4
+Approval Certificate #3 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$47300] planning a party with 20 people on day 2
+Approval Certificate #4 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$46300] planning a party with 200 people on day 3
+Didn't work out
+--------------------------------------
+======================================
+Pro2[$46300] planning a training event with 10 people on day 4
+Approval Certificate #6 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$45600] planning a sports event with 20 competitors and 10 others on day 5
+Approval Certificate #7 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$44600] planning a party with 20 people on day 3
+Approval Certificate #8 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$43600] planning a party with 200 people on day 4
+Didn't work out
+--------------------------------------
+======================================
+Pro2[$43600] planning a training event with 10 people on day 5
+Approval Certificate #10 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$42900] planning a sports event with 20 competitors and 10 others on day 6
+Approval Certificate #11 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$41900] planning a party with 20 people on day 4
+Approval Certificate #12 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$40900] planning a party with 200 people on day 5
+Didn't work out
+--------------------------------------
+======================================
+Pro2[$40900] planning a training event with 10 people on day 6
+Approval Certificate #14 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$40200] planning a sports event with 20 competitors and 10 others on day 7
+Approval Certificate #15 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$39200] planning a party with 20 people on day 5
+Approval Certificate #16 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$38200] planning a party with 200 people on day 6
+Didn't work out
+--------------------------------------
+======================================
+Pro2[$38200] planning a training event with 10 people on day 7
+Approval Certificate #18 granted to Pro2 for event
+--------------------------------------
+======================================
+Pro2[$37500] planning a sports event with 20 competitors and 10 others on day 8
+Approval Certificate #19 granted to Pro2 for event
+--------------------------------------
+EVENTS AT VEN_SML
+===================
+Date:3;Name:Pro2;Type:TRAINING;Venue:VEN_SML:numPeople:10
+Date:4;Name:Pro2;Type:TRAINING;Venue:VEN_SML:numPeople:10
+Date:5;Name:Pro2;Type:TRAINING;Venue:VEN_SML:numPeople:10
+Date:6;Name:Pro2;Type:TRAINING;Venue:VEN_SML:numPeople:10
+Date:7;Name:Pro2;Type:TRAINING;Venue:VEN_SML:numPeople:10
+--------------------
+EVENTS AT VEN_BIG
+===================
+--------------------
+EVENTS AT PRTY_SML
+===================
+Date:1;Name:Pro2;Type:PARTY;Venue:PRTY_SML:numPeople:20
+Date:2;Name:Pro2;Type:PARTY;Venue:PRTY_SML:numPeople:20
+Date:3;Name:Pro2;Type:PARTY;Venue:PRTY_SML:numPeople:20
+Date:4;Name:Pro2;Type:PARTY;Venue:PRTY_SML:numPeople:20
+Date:5;Name:Pro2;Type:PARTY;Venue:PRTY_SML:numPeople:20
+--------------------
+EVENTS AT PRTY_BIG
+===================
+--------------------
+EVENTS AT SPT_SML
+===================
+Date:4;Name:Pro2;Type:SPORT;Venue:SPT_SML:numPeople:30
+Date:5;Name:Pro2;Type:SPORT;Venue:SPT_SML:numPeople:30
+Date:6;Name:Pro2;Type:SPORT;Venue:SPT_SML:numPeople:30
+Date:7;Name:Pro2;Type:SPORT;Venue:SPT_SML:numPeople:30
+Date:8;Name:Pro2;Type:SPORT;Venue:SPT_SML:numPeople:30
+--------------------
+EVENTS AT SPT_BIG
+===================
+--------------------
+EVENTS AT TRN_SML
+===================
+--------------------
+EVENTS AT TRN_BIG
+===================
+--------------------

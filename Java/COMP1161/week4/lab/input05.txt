@@ -1,0 +1,10 @@
+1
+REFRIGERATOR MABE MB01 100 5 500
+5
+Insert 90
+Insert 100
+Remove 50
+Insert 250
+showpower
+SMARTHOME
+0

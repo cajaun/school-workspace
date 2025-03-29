@@ -1,0 +1,37 @@
+6
+REFRIGERATOR MABE MB01 100 5 500
+5
+Insert 90
+Insert 100
+Remove 50
+Insert 250
+showpower
+SMARTPHONE Samsung SM01 Galaxy 20
+1
+showpower
+SMARTPHONE Motorola MT01 Storm 5
+7
+unlock admin
+setpassword admin moto1
+setpassword moto1 pass2
+lock 
+setpassword pass2 admin
+unlock admin
+setpassword admin pass3
+SMARTPHONE Alcatel AC01 Lynx 3
+2
+unlock admin
+showpower
+LIGHTBULB BULBMAKER BM01 100
+1
+turnOn
+LIGHTBULB BULBMAKER BM02 50
+4
+turnOn  
+turnOff
+turnOn
+turnOff
+SMARTHOME
+2
+showAllThings
+showAllPower  

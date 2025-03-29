@@ -1,0 +1,16 @@
+3
+SMARTPHONE Samsung SM01 Galaxy 20
+0
+SMARTPHONE Motorola MT01 Storm 5
+7
+unlock admin
+setpassword admin moto1
+setpassword moto1 pass2
+lock 
+setpassword moto admin
+unlock admin
+setpassword admin pass3
+SMARTPHONE Alcatel AC01 Lynx 3
+1
+unlock admin
+
