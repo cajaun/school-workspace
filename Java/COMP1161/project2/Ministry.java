@@ -50,15 +50,15 @@ public class Ministry {
         int travelDate = ar.getTrip().getDate().getDay();
         int travellersOnDay = 0;
         for (ApprovalRequest a : approvedRequests)
-            if (a.getTrip().getDate().getDay() == travelDate)
+            if (a.getTrip().getDate().getDay() == travelDate) {
                 travellersOnDay += a.getTrip().getNumPeople();
-
-        if (travellersOnDay + ar.getTrip().getNumPeople() <= maxAllowed)
+            }
+        if (travellersOnDay + ar.getTrip().getNumPeople() <= maxAllowed) {
             retval = ar.getId();
-        else
+        } else {
             System.out.println("Traveller limit of " + maxAllowed + " for class " + ar.getTrip().getComfortLevel()
                     + " would be exceeded on day " + ar.getTrip().getDate().getDay() + ".");
-
+        }
         return retval;
     }
 
@@ -72,12 +72,10 @@ public class Ministry {
         String response = scan.next();
         if (response.toUpperCase().charAt(0) == 'Y') {
             System.out.println("Processing data for " + work.planners.size() + " planners");
-            for (Planner p : work.planners)
+            for (Planner p : work.planners) {
                 p.submitPlans();
-
+            }
         }
         System.out.println("-----------------------------------------------------");
-
     }
-
 }

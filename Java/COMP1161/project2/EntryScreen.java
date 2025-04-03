@@ -104,14 +104,14 @@ public class EntryScreen {
                     break;
                 case 'L':
                     ReportScreen r = new ReportScreen();
-                    r.listBuses(buses, System.out); // assuming this exists
+                    r.listBuses(buses, System.out); 
                     break;
                 case 'E':
                     System.out.println("Enter Bus ID to edit:");
                     int bid = Integer.parseInt(scan.next());
                     int bdx = findBus(buses, bid);
                     if (bdx >= 0) {
-                        buses.get(bdx).updateLocalData(scan); // will need to be implemented
+                        buses.get(bdx).updateLocalData(scan); 
                     } else {
                         System.out.println("Bus with ID " + bid + " not found.");
                     }
@@ -142,7 +142,7 @@ public class EntryScreen {
         System.out.println("Enter Comfort Level:");
         int level = Integer.parseInt(scan.next());
 
-        // Step 1: Always create a basic Bus
+        
         Bus baseBus = new Bus(name, size, price, level, mny);
 
         switch (type) {
@@ -164,7 +164,7 @@ public class EntryScreen {
                 System.out.println("Enter Number of Security:");
                 int securityP = Integer.parseInt(scan.next());
 
-                // Create a SportsBus first
+                
                 SportsBus sb = new SportsBus(baseBus, compAreaP, securityP);
 
                 System.out.println("Enter Bar Area:");
@@ -180,11 +180,10 @@ public class EntryScreen {
     public int findBus(ArrayList<Bus> buses, int bid) {
         for (int i = 0; i < buses.size(); i++) {
             if (buses.get(i).getId() == bid) {
-                return i; // Return the index immediately when the bus is found
+                return i;
             }
         }
         return -1;
-
     }
 
 }

@@ -36,22 +36,16 @@ public class Planner implements Comparable<Planner> {
             if (b.isSuitable(tripType)) {
                 if (b.canHold(numPassengers, comfortLevel)) {
                     int bestimate = b.getEstimate(tripType, numPassengers, comfortLevel);
-                    // System.out.println("Estimate for "+ b.getName() +" is "+bestimate+", budget
-                    // is "+budget);
+
                     if (bestimate <= budget)
                         possibleBuses.add(b);
                 }
-                // else{
-                // System.out.println(b.getName() +" cannot hold "+ numPassengers +" level
-                // "+comfortLevel + " passengers");
-                // }
+  
             }
-            // else{
-            // System.out.println(b.getName() +" not suitable for "+ tripType +" trip.");
-            // }
+
         }
 
-        // System.out.println(possibleBuses.size() +" affordable buses ");
+
         if (possibleBuses.size() > 0) {
             double minPrice = Double.MAX_VALUE;
             Bus minBus = null;
@@ -146,5 +140,4 @@ public class Planner implements Comparable<Planner> {
         return this.getId() + ";" + this.name + ";" + this.budget + ";" + this.plannedTrips.size() + ";"
                 + this.approvedTrips.size();
     }
-
 }

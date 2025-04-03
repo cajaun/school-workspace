@@ -73,13 +73,12 @@ public class WorkArea {
 
         try (Scanner bscan = new Scanner(new File(bfile))) {
             while (bscan.hasNextLine()) {
-                String line = bscan.nextLine().trim(); // Read line a delete excess whitespace
-                if (line.isEmpty()) {// If nothing is in the line go to the next line
+                String line = bscan.nextLine().trim(); 
+                if (line.isEmpty()) {
                     continue;
                 }
 
-                String[] parts = line.split(" "); // Split the data based on space delimiter and store each seperated
-                                                  // part in an array
+                String[] parts = line.split(" "); 
                 String name = parts[0];
                 int size = Integer.parseInt(parts[1]);
                 int price = Integer.parseInt(parts[2]);

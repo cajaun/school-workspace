@@ -38,7 +38,7 @@ public class SystemInfo {
 					}
 				});
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+		
 				e.printStackTrace();
 			}
 
@@ -49,7 +49,7 @@ public class SystemInfo {
 					}
 				});
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+			
 				e.printStackTrace();
 			}
 
@@ -60,18 +60,18 @@ public class SystemInfo {
 					}
 				});
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+		
 				e.printStackTrace();
 			}
 
 			if (!(codeFolder.equals("Not Detected"))) {
-				// save system data
+		
 				try {
 					PrintStream p = new PrintStream(new FileOutputStream("SysInfo.txt"));
 					p.println(codeFolder);
 					p.println(testCaseFolder);
 					p.println(javaDocFolder);
-					// p.println(sumScore);
+		
 					p.close();
 				} catch (IOException ioe) {
 				}
@@ -83,26 +83,24 @@ public class SystemInfo {
 
 	public String getCodeFolder() {
 		return codeFolder;
-
 	}
 
 	public String getTestCaseFolder() {
 		return testCaseFolder;
-
 	}
 
 	public String getJavaDocFolder() {
 		return javaDocFolder;
-
 	}
 
 	public void readFromScreen(Scanner scan) {
-		scan.nextLine();// to clear buffer
+		scan.nextLine();
 		System.out.print("Hit enter to keep code folder as [" + codeFolder + "] or enter new code folder:");
 		String dataval = scan.nextLine();
 		if (dataval.length() > 0)
 			codeFolder = dataval;
-		System.out.print("Hit enter to keep test case folder as [" + testCaseFolder + "] or enter new test case folder:");
+		System.out
+				.print("Hit enter to keep test case folder as [" + testCaseFolder + "] or enter new test case folder:");
 		dataval = scan.nextLine();
 		if (dataval.length() > 0)
 			testCaseFolder = dataval;
@@ -116,11 +114,9 @@ public class SystemInfo {
 			p.println(codeFolder);
 			p.println(testCaseFolder);
 			p.println(javaDocFolder);
-			// p.println(sumScore);
+
 			p.close();
 		} catch (IOException ioe) {
 		}
-
 	}
-
 }

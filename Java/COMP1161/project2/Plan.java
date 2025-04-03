@@ -10,7 +10,6 @@ public class Plan {
         this.tripType = tripType;
         this.date = new Date(date.getDay());
         this.comfortLevel = comfortLevel;
-
     }
 
     public int getNumPatrons() {
