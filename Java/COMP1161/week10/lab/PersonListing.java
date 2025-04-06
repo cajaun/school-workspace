@@ -61,14 +61,23 @@ public class PersonListing extends JPanel {
 
         cmdAddPerson = new JButton("Add Person");
 
-        // cmdAddPerson.setBackground(Color.CYAN);
+      
         // change the color of the buttosn for the last question I guess
 
         cmdSortAge = new JButton("Sort by Age");
         cmdSortFirstName = new JButton("Sort by First Name");
         cmdClose = new JButton("Close");
 
+   
+        cmdClose.setBackground(Color.RED);
+        cmdClose.setOpaque(true);
+        cmdClose.setBorderPainted(false);
+ 
+
         cmdClose.addActionListener(new CloseButtonListener());
+
+   
+
         cmdAddPerson.addActionListener(e -> new PersonEntry(this));
 
         cmdSortAge.addActionListener(e -> {
@@ -85,6 +94,9 @@ public class PersonListing extends JPanel {
         pnlCommand.add(cmdSortAge);
         pnlCommand.add(cmdSortFirstName);
         pnlCommand.add(cmdClose);
+
+
+
 
         add(pnlCommand);
     }

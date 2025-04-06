@@ -32,7 +32,7 @@ public class EntryScreen {
                     break;
                 }
                 case 'E': {
-                    System.out.println("Please enter the ID of the planner to be updated:");
+                    // System.out.println("Please enter the ID of the planner to be updated:");
                     int pid = Integer.parseInt(scan.next());
                     int pdx = findPlanner(plans, pid);
                     if (pdx >= 0)
