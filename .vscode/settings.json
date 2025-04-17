@@ -1,0 +1,9 @@
+{
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "Java/COMP1161/project3/lib/flatlaf-3.5.4 (1).jar",
+    "Java/COMP1161/project3/lib/gson-2.13.0.jar",
+    "Java/COMP1161/project3/lib/json-20250107.jar",
+    "Java/COMP1161/project3/lib/xchart-3.8.8.jar"
+  ]
+}

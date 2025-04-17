@@ -1,0 +1,1195 @@
+[
+  {
+    "firstName": "Isabella",
+    "lastName": "Wright",
+    "id": "62017000",
+    "faculty": "Science and Technology",
+    "program": "Biology",
+    "enrollmentYear": 2023,
+    "gpa": 3.96,
+    "courses": [
+      {
+        "courseCode": "BIOL3195",
+        "grade": "B-"
+      },
+      {
+        "courseCode": "BIOL1448",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "BIOL1253",
+        "grade": "A+"
+      }
+    ]
+  },
+  {
+    "firstName": "Abigail",
+    "lastName": "Taylor",
+    "id": "62017001",
+    "faculty": "Humanities and Education",
+    "program": "History",
+    "enrollmentYear": 2020,
+    "gpa": 3.88,
+    "courses": [
+      {
+        "courseCode": "HIST1561",
+        "grade": "B"
+      },
+      {
+        "courseCode": "HIST2856",
+        "grade": "C"
+      },
+      {
+        "courseCode": "HIST1785",
+        "grade": "A-"
+      }
+    ]
+  },
+  {
+    "firstName": "Abigail",
+    "lastName": "Walker",
+    "id": "62017002",
+    "faculty": "Law",
+    "program": "LLB",
+    "enrollmentYear": 2020,
+    "gpa": 3.5,
+    "courses": [
+      {
+        "courseCode": "LLB2415",
+        "grade": "B-"
+      },
+      {
+        "courseCode": "LLB2262",
+        "grade": "C+"
+      },
+      {
+        "courseCode": "LLB1000",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "firstName": "Matthew",
+    "lastName": "King",
+    "id": "62017003",
+    "faculty": "Engineering",
+    "program": "Mechanical Engineering",
+    "enrollmentYear": 2023,
+    "gpa": 3.45,
+    "courses": [
+      {
+        "courseCode": "MECH3220",
+        "grade": "F3"
+      },
+      {
+        "courseCode": "MECH1408",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "MECH3147",
+        "grade": "F2"
+      }
+    ]
+  },
+  {
+    "firstName": "Caden",
+    "lastName": "Brown",
+    "id": "62017004",
+    "faculty": "Law",
+    "program": "LLB",
+    "enrollmentYear": 2023,
+    "gpa": 2.67,
+    "courses": [
+      {
+        "courseCode": "LLB3594",
+        "grade": "F3"
+      },
+      {
+        "courseCode": "LLB1127",
+        "grade": "B"
+      },
+      {
+        "courseCode": "LLB2184",
+        "grade": "F2"
+      }
+    ]
+  },
+  {
+    "firstName": "Jackson",
+    "lastName": "Clark",
+    "id": "62017005",
+    "faculty": "Medical Sciences",
+    "program": "Medicine",
+    "enrollmentYear": 2020,
+    "gpa": 2.63,
+    "courses": [
+      {
+        "courseCode": "MEDI2447",
+        "grade": "C+"
+      },
+      {
+        "courseCode": "MEDI1594",
+        "grade": "B-"
+      },
+      {
+        "courseCode": "MEDI3580",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "firstName": "Avery",
+    "lastName": "Young",
+    "id": "62017007",
+    "faculty": "Law",
+    "program": "LLB",
+    "enrollmentYear": 2021,
+    "gpa": 3.59,
+    "courses": [
+      {
+        "courseCode": "LLB1319",
+        "grade": "C"
+      },
+      {
+        "courseCode": "LLB2385",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "LLB1405",
+        "grade": "A+"
+      }
+    ]
+  },
+  {
+    "firstName": "Grayson",
+    "lastName": "Adams",
+    "id": "62017008",
+    "faculty": "Social Sciences",
+    "program": "Sociology",
+    "enrollmentYear": 2024,
+    "gpa": 2.5,
+    "courses": [
+      {
+        "courseCode": "SOCI1535",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "SOCI3962",
+        "grade": "F3"
+      },
+      {
+        "courseCode": "SOCI2008",
+        "grade": "A"
+      }
+    ]
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Clark",
+    "id": "62017009",
+    "faculty": "Science and Technology",
+    "program": "Information Technology",
+    "enrollmentYear": 2021,
+    "gpa": 2.01,
+    "courses": [
+      {
+        "courseCode": "INFO2563",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "INFO2756",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "INFO1778",
+        "grade": "C"
+      }
+    ]
+  },
+  {
+    "firstName": "Aiden",
+    "lastName": "Hall",
+    "id": "62017010",
+    "faculty": "Humanities and Education",
+    "program": "Linguistics",
+    "enrollmentYear": 2022,
+    "gpa": 3.15,
+    "courses": [
+      {
+        "courseCode": "LING2919",
+        "grade": "C"
+      },
+      {
+        "courseCode": "LING3017",
+        "grade": "C"
+      },
+      {
+        "courseCode": "LING1188",
+        "grade": "A-"
+      }
+    ]
+  },
+  {
+    "firstName": "Emma",
+    "lastName": "Adams",
+    "id": "62017011",
+    "faculty": "Law",
+    "program": "LLB",
+    "enrollmentYear": 2022,
+    "gpa": 2.2,
+    "courses": [
+      {
+        "courseCode": "LLB1432",
+        "grade": "F3"
+      },
+      {
+        "courseCode": "LLB2380",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "LLB3637",
+        "grade": "C+"
+      }
+    ]
+  },
+  {
+    "firstName": "Elizabeth",
+    "lastName": "King",
+    "id": "62017012",
+    "faculty": "Social Sciences",
+    "program": "Management",
+    "enrollmentYear": 2024,
+    "gpa": 3.48,
+    "courses": [
+      {
+        "courseCode": "MANA2063",
+        "grade": "B"
+      },
+      {
+        "courseCode": "MANA2273",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "MANA1270",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "firstName": "Emma",
+    "lastName": "Wright",
+    "id": "62017013",
+    "faculty": "Science and Technology",
+    "program": "Mathematics",
+    "enrollmentYear": 2021,
+    "gpa": 2.29,
+    "courses": [
+      {
+        "courseCode": "MATH2489",
+        "grade": "C"
+      },
+      {
+        "courseCode": "MATH1851",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "MATH2934",
+        "grade": "F2"
+      }
+    ]
+  },
+  {
+    "firstName": "Caden",
+    "lastName": "Scott",
+    "id": "62017014",
+    "faculty": "Law",
+    "program": "LLB",
+    "enrollmentYear": 2020,
+    "gpa": 3.54,
+    "courses": [
+      {
+        "courseCode": "LLB1448",
+        "grade": "B-"
+      },
+      {
+        "courseCode": "LLB1361",
+        "grade": "A"
+      },
+      {
+        "courseCode": "LLB1128",
+        "grade": "B-"
+      }
+    ]
+  },
+  {
+    "firstName": "Caden",
+    "lastName": "Baker",
+    "id": "62017015",
+    "faculty": "Science and Technology",
+    "program": "Software Engineering",
+    "enrollmentYear": 2024,
+    "gpa": 3.67,
+    "courses": [
+      {
+        "courseCode": "SOFT2585",
+        "grade": "C+"
+      },
+      {
+        "courseCode": "SOFT1269",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "SOFT1813",
+        "grade": "A"
+      }
+    ]
+  },
+  {
+    "firstName": "Sebastian",
+    "lastName": "King",
+    "id": "62017016",
+    "faculty": "Law",
+    "program": "LLB",
+    "enrollmentYear": 2022,
+    "gpa": 3.62,
+    "courses": [
+      {
+        "courseCode": "LLB1903",
+        "grade": "F2"
+      },
+      {
+        "courseCode": "LLB2251",
+        "grade": "F2"
+      },
+      {
+        "courseCode": "LLB1440",
+        "grade": "A+"
+      }
+    ]
+  },
+  {
+    "firstName": "Ava",
+    "lastName": "Nelson",
+    "id": "62017017",
+    "faculty": "Medical Sciences",
+    "program": "Pharmacy",
+    "enrollmentYear": 2024,
+    "gpa": 2.54,
+    "courses": [
+      {
+        "courseCode": "PHAR1004",
+        "grade": "B-"
+      },
+      {
+        "courseCode": "PHAR3967",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "PHAR3466",
+        "grade": "F1"
+      }
+    ]
+  },
+  {
+    "firstName": "Sebastian",
+    "lastName": "King",
+    "id": "62017018",
+    "faculty": "Science and Technology",
+    "program": "Computer Science",
+    "enrollmentYear": 2022,
+    "gpa": 3.76,
+    "courses": [
+      {
+        "courseCode": "COMP1304",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "COMP1682",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "COMP2288",
+        "grade": "C"
+      }
+    ]
+  },
+  {
+    "firstName": "Elijah",
+    "lastName": "Allen",
+    "id": "62017019",
+    "faculty": "Science and Technology",
+    "program": "Information Technology",
+    "enrollmentYear": 2021,
+    "gpa": 2.51,
+    "courses": [
+      {
+        "courseCode": "INFO2060",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "INFO2536",
+        "grade": "A"
+      },
+      {
+        "courseCode": "INFO3740",
+        "grade": "A"
+      }
+    ]
+  },
+  {
+    "firstName": "Evelyn",
+    "lastName": "Walker",
+    "id": "62017020",
+    "faculty": "Medical Sciences",
+    "program": "Medicine",
+    "enrollmentYear": 2021,
+    "gpa": 2.29,
+    "courses": [
+      {
+        "courseCode": "MEDI2674",
+        "grade": "C+"
+      },
+      {
+        "courseCode": "MEDI2200",
+        "grade": "A"
+      },
+      {
+        "courseCode": "MEDI1542",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "firstName": "Liam",
+    "lastName": "Jones",
+    "id": "62017021",
+    "faculty": "Engineering",
+    "program": "Civil Engineering",
+    "enrollmentYear": 2020,
+    "gpa": 2.63,
+    "courses": [
+      {
+        "courseCode": "CIVI2860",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "CIVI2252",
+        "grade": "F2"
+      },
+      {
+        "courseCode": "CIVI2038",
+        "grade": "F2"
+      }
+    ]
+  },
+  {
+    "firstName": "Matthew",
+    "lastName": "Brown",
+    "id": "62017022",
+    "faculty": "Humanities and Education",
+    "program": "Philosophy",
+    "enrollmentYear": 2020,
+    "gpa": 2.75,
+    "courses": [
+      {
+        "courseCode": "PHIL2471",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "PHIL1243",
+        "grade": "C"
+      },
+      {
+        "courseCode": "PHIL1954",
+        "grade": "B+"
+      }
+    ]
+  },
+  {
+    "firstName": "Elijah",
+    "lastName": "Wilson",
+    "id": "62017023",
+    "faculty": "Social Sciences",
+    "program": "Economics",
+    "enrollmentYear": 2024,
+    "gpa": 3.24,
+    "courses": [
+      {
+        "courseCode": "ECON3477",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "ECON2490",
+        "grade": "A"
+      },
+      {
+        "courseCode": "ECON3660",
+        "grade": "F2"
+      }
+    ]
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Jones",
+    "id": "62017024",
+    "faculty": "Science and Technology",
+    "program": "Biology",
+    "enrollmentYear": 2020,
+    "gpa": 2.19,
+    "courses": [
+      {
+        "courseCode": "BIOL1871",
+        "grade": "B-"
+      },
+      {
+        "courseCode": "BIOL1106",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "BIOL3942",
+        "grade": "F1"
+      }
+    ]
+  },
+  {
+    "firstName": "Ava",
+    "lastName": "Jones",
+    "id": "62017025",
+    "faculty": "Engineering",
+    "program": "Civil Engineering",
+    "enrollmentYear": 2022,
+    "gpa": 3.44,
+    "courses": [
+      {
+        "courseCode": "CIVI3805",
+        "grade": "B-"
+      },
+      {
+        "courseCode": "CIVI1081",
+        "grade": "F2"
+      },
+      {
+        "courseCode": "CIVI2338",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "firstName": "Isabella",
+    "lastName": "Walker",
+    "id": "62017026",
+    "faculty": "Medical Sciences",
+    "program": "Medicine",
+    "enrollmentYear": 2022,
+    "gpa": 2.86,
+    "courses": [
+      {
+        "courseCode": "MEDI2763",
+        "grade": "C+"
+      },
+      {
+        "courseCode": "MEDI1621",
+        "grade": "A"
+      },
+      {
+        "courseCode": "MEDI1640",
+        "grade": "F1"
+      }
+    ]
+  },
+  {
+    "firstName": "Isabella",
+    "lastName": "Thomas",
+    "id": "62017027",
+    "faculty": "Medical Sciences",
+    "program": "Pharmacy",
+    "enrollmentYear": 2023,
+    "gpa": 3.5,
+    "courses": [
+      {
+        "courseCode": "PHAR2350",
+        "grade": "F2"
+      },
+      {
+        "courseCode": "PHAR1355",
+        "grade": "F3"
+      },
+      {
+        "courseCode": "PHAR1582",
+        "grade": "B-"
+      }
+    ]
+  },
+  {
+    "firstName": "Sophia",
+    "lastName": "Hill",
+    "id": "62017028",
+    "faculty": "Law",
+    "program": "LLB",
+    "enrollmentYear": 2022,
+    "gpa": 2.1,
+    "courses": [
+      {
+        "courseCode": "LLB3763",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "LLB2237",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "LLB1079",
+        "grade": "C+"
+      }
+    ]
+  },
+  {
+    "firstName": "Noah",
+    "lastName": "Hill",
+    "id": "62017029",
+    "faculty": "Science and Technology",
+    "program": "Information Technology",
+    "enrollmentYear": 2023,
+    "gpa": 3.75,
+    "courses": [
+      {
+        "courseCode": "INFO2375",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "INFO2655",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "INFO1001",
+        "grade": "A+"
+      }
+    ]
+  },
+  {
+    "firstName": "Mia",
+    "lastName": "Taylor",
+    "id": "62017030",
+    "faculty": "Humanities and Education",
+    "program": "Philosophy",
+    "enrollmentYear": 2020,
+    "gpa": 2.44,
+    "courses": [
+      {
+        "courseCode": "PHIL3817",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "PHIL3891",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "PHIL1495",
+        "grade": "C+"
+      }
+    ]
+  },
+  {
+    "firstName": "Jackson",
+    "lastName": "Adams",
+    "id": "62017031",
+    "faculty": "Engineering",
+    "program": "Electrical Engineering",
+    "enrollmentYear": 2020,
+    "gpa": 3.86,
+    "courses": [
+      {
+        "courseCode": "ELEC2954",
+        "grade": "A"
+      },
+      {
+        "courseCode": "ELEC1097",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "ELEC3422",
+        "grade": "F2"
+      }
+    ]
+  },
+  {
+    "firstName": "Mia",
+    "lastName": "King",
+    "id": "62017032",
+    "faculty": "Social Sciences",
+    "program": "Economics",
+    "enrollmentYear": 2024,
+    "gpa": 3.32,
+    "courses": [
+      {
+        "courseCode": "ECON2236",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "ECON1428",
+        "grade": "B"
+      },
+      {
+        "courseCode": "ECON2529",
+        "grade": "B+"
+      }
+    ]
+  },
+  {
+    "firstName": "Harper",
+    "lastName": "Wright",
+    "id": "62017033",
+    "faculty": "Social Sciences",
+    "program": "Management",
+    "enrollmentYear": 2022,
+    "gpa": 2.34,
+    "courses": [
+      {
+        "courseCode": "MANA2860",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "MANA2304",
+        "grade": "B"
+      },
+      {
+        "courseCode": "MANA2459",
+        "grade": "F3"
+      }
+    ]
+  },
+  {
+    "firstName": "Amelia",
+    "lastName": "Hill",
+    "id": "62017034",
+    "faculty": "Medical Sciences",
+    "program": "Pharmacy",
+    "enrollmentYear": 2021,
+    "gpa": 2.59,
+    "courses": [
+      {
+        "courseCode": "PHAR2792",
+        "grade": "F2"
+      },
+      {
+        "courseCode": "PHAR3670",
+        "grade": "F2"
+      },
+      {
+        "courseCode": "PHAR1959",
+        "grade": "A+"
+      }
+    ]
+  },
+  {
+    "firstName": "Evelyn",
+    "lastName": "Scott",
+    "id": "62017035",
+    "faculty": "Medical Sciences",
+    "program": "Medicine",
+    "enrollmentYear": 2020,
+    "gpa": 2.5,
+    "courses": [
+      {
+        "courseCode": "MEDI1347",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "MEDI3589",
+        "grade": "A"
+      },
+      {
+        "courseCode": "MEDI3647",
+        "grade": "A"
+      }
+    ]
+  },
+  {
+    "firstName": "Mason",
+    "lastName": "Clark",
+    "id": "62017036",
+    "faculty": "Humanities and Education",
+    "program": "History",
+    "enrollmentYear": 2020,
+    "gpa": 3.61,
+    "courses": [
+      {
+        "courseCode": "HIST3361",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "HIST3153",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "HIST3626",
+        "grade": "F1"
+      }
+    ]
+  },
+  {
+    "firstName": "Harper",
+    "lastName": "Hall",
+    "id": "62017037",
+    "faculty": "Social Sciences",
+    "program": "Sociology",
+    "enrollmentYear": 2022,
+    "gpa": 3.77,
+    "courses": [
+      {
+        "courseCode": "SOCI1846",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "SOCI3695",
+        "grade": "B"
+      },
+      {
+        "courseCode": "SOCI1880",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "firstName": "Elizabeth",
+    "lastName": "Green",
+    "id": "62017038",
+    "faculty": "Medical Sciences",
+    "program": "Medicine",
+    "enrollmentYear": 2020,
+    "gpa": 3.4,
+    "courses": [
+      {
+        "courseCode": "MEDI1425",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "MEDI3482",
+        "grade": "B"
+      },
+      {
+        "courseCode": "MEDI2694",
+        "grade": "C"
+      }
+    ]
+  },
+  {
+    "firstName": "Sophia",
+    "lastName": "Lewis",
+    "id": "62017039",
+    "faculty": "Science and Technology",
+    "program": "Software Engineering",
+    "enrollmentYear": 2023,
+    "gpa": 2.95,
+    "courses": [
+      {
+        "courseCode": "SOFT2506",
+        "grade": "C"
+      },
+      {
+        "courseCode": "SOFT2694",
+        "grade": "B"
+      },
+      {
+        "courseCode": "SOFT1056",
+        "grade": "B+"
+      }
+    ]
+  },
+  {
+    "firstName": "Jackson",
+    "lastName": "Young",
+    "id": "62017040",
+    "faculty": "Engineering",
+    "program": "Civil Engineering",
+    "enrollmentYear": 2023,
+    "gpa": 3.88,
+    "courses": [
+      {
+        "courseCode": "CIVI1866",
+        "grade": "F3"
+      },
+      {
+        "courseCode": "CIVI1502",
+        "grade": "A"
+      },
+      {
+        "courseCode": "CIVI3910",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "firstName": "Avery",
+    "lastName": "Green",
+    "id": "62017041",
+    "faculty": "Social Sciences",
+    "program": "Management",
+    "enrollmentYear": 2021,
+    "gpa": 2.1,
+    "courses": [
+      {
+        "courseCode": "MANA2902",
+        "grade": "C"
+      },
+      {
+        "courseCode": "MANA3145",
+        "grade": "C"
+      },
+      {
+        "courseCode": "MANA2061",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "firstName": "James",
+    "lastName": "Hill",
+    "id": "62017042",
+    "faculty": "Science and Technology",
+    "program": "Mathematics",
+    "enrollmentYear": 2024,
+    "gpa": 2.47,
+    "courses": [
+      {
+        "courseCode": "MATH1645",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "MATH1650",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "MATH3278",
+        "grade": "A+"
+      }
+    ]
+  },
+  {
+    "firstName": "Isabella",
+    "lastName": "Wright",
+    "id": "62017043",
+    "faculty": "Law",
+    "program": "LLB",
+    "enrollmentYear": 2024,
+    "gpa": 3.57,
+    "courses": [
+      {
+        "courseCode": "LLB2513",
+        "grade": "F3"
+      },
+      {
+        "courseCode": "LLB3929",
+        "grade": "F1"
+      },
+      {
+        "courseCode": "LLB1071",
+        "grade": "A+"
+      }
+    ]
+  },
+  {
+    "firstName": "Lucas",
+    "lastName": "Wright",
+    "id": "62017044",
+    "faculty": "Law",
+    "program": "LLB",
+    "enrollmentYear": 2021,
+    "gpa": 2.9,
+    "courses": [
+      {
+        "courseCode": "LLB3665",
+        "grade": "C+"
+      },
+      {
+        "courseCode": "LLB3540",
+        "grade": "C+"
+      },
+      {
+        "courseCode": "LLB3488",
+        "grade": "F1"
+      }
+    ]
+  },
+  {
+    "firstName": "Jacob",
+    "lastName": "Walker",
+    "id": "62017045",
+    "faculty": "Humanities and Education",
+    "program": "History",
+    "enrollmentYear": 2022,
+    "gpa": 2.67,
+    "courses": [
+      {
+        "courseCode": "HIST2030",
+        "grade": "B"
+      },
+      {
+        "courseCode": "HIST1379",
+        "grade": "B"
+      },
+      {
+        "courseCode": "HIST2460",
+        "grade": "B+"
+      }
+    ]
+  },
+  {
+    "firstName": "Olivia",
+    "lastName": "Allen",
+    "id": "62017046",
+    "faculty": "Humanities and Education",
+    "program": "History",
+    "enrollmentYear": 2021,
+    "gpa": 3.51,
+    "courses": [
+      {
+        "courseCode": "HIST3773",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "HIST2657",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "HIST2376",
+        "grade": "A+"
+      }
+    ]
+  },
+  {
+    "firstName": "Sophia",
+    "lastName": "Scott",
+    "id": "62017047",
+    "faculty": "Engineering",
+    "program": "Electrical Engineering",
+    "enrollmentYear": 2020,
+    "gpa": 3.28,
+    "courses": [
+      {
+        "courseCode": "ELEC3949",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "ELEC1254",
+        "grade": "C"
+      },
+      {
+        "courseCode": "ELEC3728",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "firstName": "Liam",
+    "lastName": "Walker",
+    "id": "62017048",
+    "faculty": "Social Sciences",
+    "program": "Economics",
+    "enrollmentYear": 2023,
+    "gpa": 4.01,
+    "courses": [
+      {
+        "courseCode": "ECON2320",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "ECON3994",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "ECON1742",
+        "grade": "F1"
+      }
+    ]
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Hill",
+    "id": "62017049",
+    "faculty": "Science and Technology",
+    "program": "Software Engineering",
+    "enrollmentYear": 2020,
+    "gpa": 3.8,
+    "courses": [
+      {
+        "courseCode": "SOFT2456",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "SOFT2456",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "SOFT2799",
+        "grade": "C"
+      }
+    ]
+  },
+  {
+    "firstName": "Susan",
+    "lastName": "Storm",
+    "id": "620169000",
+    "faculty": "Science and Technology",
+    "program": "Information Technology",
+    "enrollmentYear": 2024,
+    "gpa": 3.46,
+    "courses": [
+      {
+        "courseCode": "COMP1126",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "COMP1127",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "COMP1220",
+        "grade": "B+"
+      },
+      {
+        "courseCode": "COMP1210",
+        "grade": "A-"
+      },
+      {
+        "courseCode": "COMP1161",
+        "grade": "B+"
+      }
+    ]
+  },
+  {
+    "firstName": "Cajaun",
+    "lastName": "Campbell",
+    "id": "620169526",
+    "faculty": "Science and Technology",
+    "program": "Comp Sci",
+    "enrollmentYear": 2024,
+    "gpa": 4.3,
+    "courses": [
+      {
+        "courseCode": "COMP1126",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "COMP1127",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "COMP1210",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "COMP1220",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "ECON1000",
+        "grade": "A+"
+      },
+      {
+        "courseCode": "ECNG1012",
+        "grade": "A+"
+      }
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+# Marked - Your Student Grade Management System! 🏫
+
+## What Is It?
+
+Marked is a desktop application designed to simplify the management of student grades. It provides a user-friendly interface for adding new students, viewing and editing their grades, and visualizing individual student performance. This application aims to streamline the process of tracking student academic progress, making it easier for educators and administrators to manage educational data.
+
+## What Does It Have?
+
+* **Add New Students:** Easily input new student information, including their ID, name, faculty, program, enrollment year, and initial course grades.
+* **View Students:** Display a comprehensive table of all students with their key information and current GPA. The table supports sorting for easy data analysis.
+* **Edit Student Grades:** Modify the grades for existing students. The system automatically recalculates the student's GPA upon saving changes.
+* **Visualize Grades:** Generate a bar chart visualizing the grades of a specific student for their enrolled courses, providing a clear overview of their academic performance.
+
+## How Do I Use It?
+
+### What Do I Need To Run It?
+
+* **Java Runtime Environment (JRE):** Ensure that you have Java installed on your system to run the application. You can download the latest version from [https://www.oracle.com/java/technologies/javase-jre8-downloads.html](https://www.oracle.com/java/technologies/javase-jre8-downloads.html) (or a more recent version).
+
+### Running the Application
+
+1.  **Download the Application:** Obtain the packaged application (e.g., a JAR file) of "Marked".
+2.  **Open a Terminal or Command Prompt:** Navigate to the directory where the application JAR file is located.
+3.  **Run the Application
+4.  **Welcome Screen:** The application will start, and you will be greeted with the "Marked" welcome screen. Click the "Get started →" button to proceed to the main menu.
+
+### Navigating the Application
+
+#### Main Menu
+
+The main menu provides access to the core functionalities of Marked:
+
+* **Add Student:** Click this button to open a form where you can enter the details of a new student, including their personal information and initial course grades. You will need to select courses from the dropdown menus (which are searchable) and assign a letter grade for each. Ensure you fill in at least three courses and grades.
+* **View Students:** Clicking this button will display a table containing a list of all students currently in the system, along with their ID, name, faculty, program, enrollment year, and GPA. You can click on the column headers to sort the table.
+* **Edit Student:** Select this option to modify the grades of an existing student. You will be prompted to enter the Student ID of the student you wish to edit. Once found, a panel will display their current courses and grades, allowing you to make changes and save them. The GPA will be automatically updated.
+
+#### View Students Menu
+
+* The table displays student information.
+* Clicking "Visualize Grades" will prompt you to enter a Student ID. Upon entering a valid ID, a bar chart showing the grades for that student will be displayed.
+* The "Back to Table" button (visible after viewing a chart) will return you to the student information table.
+
+#### Add Student Menu
+
+* Fill in the required fields for the new student's information.
+* Select courses from the searchable dropdown menus and assign letter grades.
+* Click "Save" to add the new student to the system.
+* Click "Back" to return to the main menu without saving.
+
+#### Edit Student Menu
+
+* Enter the Student ID of the student you want to edit.
+* Modify the grades in the dropdown menus next to each course.
+* Click "Save Changes" to update the student's grades and GPA.
+* Click "Back" to return to the "View Students" menu without saving changes.
+
+## Data Storage
+
+Student data, including personal information and grades, is stored in a JSON file (`students.json`) located in the `data` directory within the application's working directory. Course codes are loaded from another JSON file (`courseCode.json`) in the same directory.
