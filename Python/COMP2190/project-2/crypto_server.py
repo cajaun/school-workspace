@@ -4,11 +4,6 @@
 # the server sends the client a public key. The client uses the public key to
 # send a session key with confidentiality to the server.
 
-# Author: 
-# Last modified: 2024-11-11
-# Version: 0.1.1
-#!/usr/bin/python3
-
 import socket
 import random
 import math
@@ -69,14 +64,16 @@ class RSAServer(object):
         """ use the expMod() function. You should also ensure that msg < n before encrypting"""
         """You will need to complete this function."""
         """You will need to complete this function."""
-        pass
+        if msg >= self.modulus:
+            raise ValueError("Message must be < n")
+        return NumTheory.expMod(msg, self.pubExponent, self.modulus)
 
     def RSAdecrypt(self, cText):
         """Decryption side of RSA"""
         """"This function will return (cText^exponent mod modulus) and you *must*"""
         """ use the expMod() function"""
         """You will need to complete this function."""
-        pass
+        return NumTheory.expMod(cText, self.privExponent, self.modulus)
 
     def AESdecrypt(self, cText):
         """Decryption side of AES"""
@@ -99,12 +96,24 @@ class RSAServer(object):
     def findE(self, phi):
         """Method to randomly choose a good e given phi"""
         """You will need to complete this function."""
-        pass
+        while True:
+            e = random.randint(3, phi-1)
+            if NumTheory.gcd_iter(e, phi) == 1:
+                return e
 
     def genKeys(self, p, q):
         """Generates n, phi(n), e, and d"""
         """You will need to complete this function."""
-        pass
+        self.modulus = p * q
+        phi = (p - 1) * (q - 1)
+
+        self.pubExponent = self.findE(phi)
+        self.privExponent = NumTheory.ext_Euclid(phi, self.pubExponent)
+
+        print("n =", self.modulus)
+        print("phi(n) =", phi)
+        print("e =", self.pubExponent)
+        print("d =", self.privExponent)
 
     def clientHelloResp(self):
         """Generates response string to client's hello message"""
@@ -117,19 +126,60 @@ class RSAServer(object):
         """Verifies that the transmitted nonce matches that received
         from the client."""
         """You will need to complete this function."""
-        pass
+        return decryptedNonce == self.nonce
 
 
     def start(self):
-        """Main sending and receiving loop"""
-        """You will need to complete this function"""
+        self.genKeys(p, q)
+        print("Server started...")
+
         while True:
             connSocket, addr = self.socket.accept()
-            #self.socket.connect((self.address, self.port))
-            msg = connSocket.recv(1024).decode('utf-8')
-            print (msg)
+            print("Connection from:", addr)
+
+            msg = connSocket.recv(4096).decode('utf-8')
+            print("Client:", msg)
+
+            # send hello + pubkey + nonce
             self.send(connSocket, self.clientHelloResp())
-            self.close(connSocket)
+
+            # receive session key msg
+            sessionMsg = connSocket.recv(4096).decode('utf-8')
+            print("Client:", sessionMsg)
+
+            parts = sessionMsg.split()
+            # Expected: "103 SessionKey encKey encNonce"
+            encKey = int(parts[2])
+            encNonce = int(parts[3])
+
+            sessionKey = self.RSAdecrypt(encKey)
+            self.sessionKey = sessionKey
+
+            decryptedNonce = self.AESdecrypt(encNonce)
+
+            if not self.nonceVerification(decryptedNonce):
+                self.send(connSocket, "400 Error")
+                self.close(connSocket)
+                break
+
+            self.send(connSocket, "104 Nonce Verified")
+
+            # Receive encrypted integers
+            encInts = connSocket.recv(4096).decode('utf-8').split()
+            print("Client:", encInts)
+
+            a_enc = int(encInts[2])
+            b_enc = int(encInts[3])
+
+            a = self.AESdecrypt(a_enc)
+            b = self.AESdecrypt(b_enc)
+
+            result = a + b
+            result_enc = self.AESencrypt(result)
+
+            self.send(connSocket, f"114 CompositeEncrypted {result_enc}")
+
+            connSocket.close()
             break
 
 def main():

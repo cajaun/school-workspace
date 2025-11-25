@@ -16,10 +16,6 @@ import sys
 import simplified_AES
 from NumTheory import NumTheory
 
-# Author: 
-# Last modified: 2024-11-11
-# Version: 0.1
-#!/usr/bin/python3
 
 class RSAClient:
     def __init__(self, address, port):
@@ -63,39 +59,91 @@ class RSAClient:
             self.socket = None
 
     def RSAencrypt(self, msg):
-        """"This function will return (msg^exponent mod modulus) and you"""
-        """ *must* use the expMod() function. You should also ensure that"""
-        """  msg < n before encrypting"""
-        """You will need to complete this function."""
-        pass
+        if msg >= self.modulus:
+            raise ValueError("Message must be < n")
+        return NumTheory.expMod(msg, self.serverExponent, self.modulus)
 
     def computeSessionKey(self):
-        """Computes this node's session key"""
-        """Update this method such that you are guaranteed correct results"""
-        self.sessionKey = random.randint(1, 65536)
+        self.sessionKey = random.randint(32768, 65535)
 
     def AESencrypt(self, plaintext):
         """Computes the simplified AES encryption of some plaintext"""
         simplified_AES.keyExp(self.sessionKey) # Generating round keys for AES.
         ciphertext = simplified_AES.encrypt(plaintext) # Running simplified AES.
         return ciphertext
+    
+    def AESdecrypt(self, cText):
+        simplified_AES.keyExp(self.sessionKey)
+        return simplified_AES.decrypt(cText)
 
     def serverHello(self):
         status = "101 Hello 3DES, AES, RSA16, DH16"
         return status
 
-    def sessionKeyMsg(nonce):
-        """Function to generate response string to server's hello"""
-        pass
+    def sessionKeyMsg(self, nonce):
+        self.computeSessionKey()
+
+        encKey = self.RSAencrypt(self.sessionKey)
+        encNonce = self.AESencrypt(nonce)
+
+        return f"103 SessionKey {encKey} {encNonce}"
 
     def start(self):
-        """Main sending and receiving loop for the client"""
         self.connect()
+        print("Sending:", self.serverHello())
         self.send(self.serverHello())
+
         self.read()
-        print(self.lastRcvdMsg)
+        print("Received:", self.lastRcvdMsg)
+
+        # Parse modulus, exponent, nonce
+        parts = self.lastRcvdMsg.split(", ")
+        self.modulus = int(parts[2])
+        self.serverExponent = int(parts[3])
+        nonce = int(parts[4])
+
+        # Send session key message
+        msg = self.sessionKeyMsg(nonce)
+        print("Sending:", msg)
+        self.send(msg)
+
+        # Receive nonce verification
+        self.read()
+        print("Received:", self.lastRcvdMsg)
+
+        if "400" in self.lastRcvdMsg:
+            print("Server rejected nonce, closing.")
+            self.close()
+            return
+
+        # Ask user for two integers
+        a = int(input("Enter integer a: "))
+        b = int(input("Enter integer b: "))
+
+        a_enc = self.AESencrypt(a)
+        b_enc = self.AESencrypt(b)
+
+        sendInts = f"113 IntegersEncrypted {a_enc} {b_enc}"
+        print("Sending:", sendInts)
+        self.send(sendInts)
+
+        # Receive encrypted composite
+        self.read()
+        print("Received:", self.lastRcvdMsg)
+
+        parts = self.lastRcvdMsg.split()
+        compositeEnc = int(parts[2])
+        composite = self.AESdecrypt(compositeEnc)
+
+        # Verify correctness
+        if composite == a + b:
+            print("Sending 200 OK")
+            self.send("200 OK")
+        else:
+            print("Sending 400 Error")
+            self.send("400 Error")
+
         self.close()
-        #pass
 
 
 def main():
