@@ -16,31 +16,36 @@ It spans **Java**, **Python**, **HTML/CSS/JS**, and **Net-Centric/Computing**, f
 
 ```
 school-workspace
-│── Html/          → COMP1220
-│── Java/          → COMP1161 
-│── Python/        → COMP1126 & COMP1127 & COMP2190
+│── Html/          → COMP1220 (web development)
+│── Java/          → COMP1161 (OOP, GUIs, simulations)
+│── Python/        → COMP1126, COMP1127, COMP2190, COMP2211 (programming foundations through advanced practice)
 ```
 
 ---
 
 # HTML — COMP1220
 
-### Web Development Project  
+### Web Development Project
+
 Includes:
+
 - `index.html`, `index.css`, `index.js`
-- Image assets 
+- Image assets
 
 Focus:
-- Responsive layouts  
-- Clean UI  
-- DOM scripting  
+
+- Responsive layouts
+- Clean UI
+- DOM scripting
 
 ---
 
 # Java — COMP1161
 
-## Exam Solutions  
+## Exam Solutions
+
 Covers:
+
 - **April 2024**
 - **July 2017**
 - **July 2023**
@@ -49,6 +54,7 @@ Covers:
 - **May 2023**
 
 Complete class implementations:
+
 - Academic systems (`HighSchool`, `UWIStudent`)
 - Payroll & HR hierarchies
 - Shapes/geometry
@@ -57,16 +63,20 @@ Complete class implementations:
 ---
 
 ## Project 1 — Crime & Community Simulation
+
 Features:
+
 - `Community`, `Criminal`, `SOE`, `ZOSO`, `Raid`
-- Data-driven simulations  
-- Multiple test files  
-- BlueJ package  
+- Data-driven simulations
+- Multiple test files
+- BlueJ package
 
 ---
 
 ## Project 2 — National Bus Planning System
+
 Includes:
+
 - Bus hierarchy (`PartyBus`, `SportsBus`, `TrainingBus`)
 - `Planner`, `Plan`, `Trip`
 - GUI screens: `EntryScreen`, `ReportScreen`
@@ -76,98 +86,124 @@ Includes:
 ---
 
 ## Project 3 — GPA & Academic Records Manager
+
 Includes:
-- JSON-backed dataset  
-- GUI using FlatLaf  
-- XChart graphs  
-- Exportable `.jar` build  
-- Screens for Adding, Editing, Viewing Students  
+
+- JSON-backed dataset
+- GUI using FlatLaf
+- XChart graphs
+- Exportable `.jar` build
+- Screens for Adding, Editing, Viewing Students
 
 ---
 
 # Weekly Labs (Java)
+
 Covers Weeks 2–10:
-- Inheritance  
-- Interfaces  
-- Exception handling  
-- File I/O  
-- FreeTTS speech engine  
-- Smart Home Simulation  
-- Transport Con Contractor  
+
+- Inheritance
+- Interfaces
+- Exception handling
+- File I/O
+- FreeTTS speech engine
+- Smart Home Simulation
+- Transport Con Contractor
 
 ---
 
 # Python — COMP1126 (Intro to Computing I)
 
 Includes:
+
 - Hackerrank solutions
 - Lab submissions (`Lab0 → Lab5`)
 - Tutorials with exercises
 - Foundational Python:
-  - loops, functions, conditions  
-  - dictionaries, lists  
-  - recursion  
-  - simple file processing  
+  - loops, functions, conditions
+  - dictionaries, lists
+  - recursion
+  - simple file processing
 
 ---
 
 # Python — COMP1127 (Intro to Computing II)
 
 Includes:
+
 - Exam prep (2017–2023)
 - Data structures packet:
-  - Stacks  
-  - Queues  
-  - Binary Trees  
-  - Recursion  
-  - Search/sort algorithms  
-- Labs for Weeks 8–12  
-- Tutorials & practice problems  
+  - Stacks
+  - Queues
+  - Binary Trees
+  - Recursion
+  - Search/sort algorithms
+- Labs for Weeks 8–12
+- Tutorials & practice problems
 
 ---
 
-# COMP2190 — Net-Centric Computing 
+# COMP2190 — Net-Centric Computing
 
 ## Project 1 — RSA Client/Server System
-- Secure message passing  
-- Number theory utilities  
-- Ciphertext/Plaintext generation  
-- Documentation PDF  
+
+- Secure message passing
+- Number theory utilities
+- Ciphertext/Plaintext generation
+- Documentation PDF
 
 ## Project 2 — PGP & AES Encryption Suite
-- Simplified AES  
-- RSA signing  
-- Public key distribution (`.asc` files)  
-- Encrypted messages (`message.asc`)  
-- Full secure email simulation  
+
+- Simplified AES
+- RSA signing
+- Public key distribution (`.asc` files)
+- Encrypted messages (`message.asc`)
+- Full secure email simulation
+
+---
+
+# Python — COMP2211 (Advanced Programming I)
+
+Includes:
+
+- Weekly modules `week-1` through `week-8`
+- Weekly Hackerrank problem sets with real coding practice
+- Core concepts: control flow, iteration, recursion, time complexity, and statistics
+- Example exercises:
+  - `rng_statistics.py`, `hop_squash.py`, `secret_codes.py`
+  - `assembly_operations.py`, `bad_blockchain.py`, `treasure_islands.py`
 
 ---
 
 # How to Use This Workspace
 
 ### Java
+
 ```
 javac FileName.java
 java FileName
 ```
 
 ### Python
+
 ```
 python3 script.py
 ```
 
 ### Web
+
 Open `index.html` in a browser.
 
 ---
 
-# ✨ Author
+# Author
+
 **Cajaun Campbell**  
 Academic Coursework Portfolio
 
 ---
 
 # License
+
 This workspace is academic; redistribution is not permitted without permission.
 
 ---

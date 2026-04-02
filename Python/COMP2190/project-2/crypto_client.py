@@ -28,6 +28,7 @@ class RSAClient:
         self.serverExponent = None	#For storing the server's e in the public key
 
     def connect(self):
+        """Establish TCP connection to server."""
         self.socket.connect((self.address, self.port))
 
 
@@ -59,12 +60,16 @@ class RSAClient:
             self.socket = None
 
     def RSAencrypt(self, msg):
+        """Encrypt session key using server RSA public key."""
         if msg >= self.modulus:
             raise ValueError("Message must be < n")
         return NumTheory.expMod(msg, self.serverExponent, self.modulus)
 
     def computeSessionKey(self):
-        self.sessionKey = random.randint(32768, 65535)
+        """Generate 15–16 bit random session key."""
+        low = 1 << 15      
+        high = min(65535, self.modulus - 1)
+        self.sessionKey = random.randint(low, high)
 
     def AESencrypt(self, plaintext):
         """Computes the simplified AES encryption of some plaintext"""
@@ -152,7 +157,7 @@ def main():
     if len(args) != 3:
         print ("Please supply a server address and port.")
         sys.exit()
-    print("Client of ________")
+    print("Client of Cajaun")
     serverHost = str(args[1])       # The remote host
     serverPort = int(args[2])       # The same port as used by the server
 

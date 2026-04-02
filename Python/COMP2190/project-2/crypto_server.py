@@ -17,11 +17,18 @@ from NumTheory import NumTheory
 class RSAServer(object):
     
     def __init__(self, port, p, q):
+         # Create TCP socket
         self.socket = socket.socket()
         # The option below is to permit reuse of a socket in less than an MSL
         self.socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.socket.bind(("", int(port)))
         self.socket.listen(5)
+        
+        # Store primes for RSA key generation
+        self.p = p
+        self.q = q
+    
+    
         self.lastRcvdMsg = None
         self.sessionKey = None		#For storing the symmetric key
         self.modulus = None		#For storing the server's n in the public/private key
@@ -32,6 +39,7 @@ class RSAServer(object):
         
 
     def send(self, conn, message):
+        """Send UTF-8 encoded message to client."""
         conn.send(bytes(message,'utf-8'))
 
     def read(self):
@@ -59,20 +67,13 @@ class RSAServer(object):
             conn = None    
 
     def RSAencrypt(self, msg):
-        """Encryption side of RSA"""
-        """"This function will return (msg^exponent mod modulus) and you *must*"""
-        """ use the expMod() function. You should also ensure that msg < n before encrypting"""
-        """You will need to complete this function."""
-        """You will need to complete this function."""
+        """RSA encryption: c = m^e mod n"""
         if msg >= self.modulus:
             raise ValueError("Message must be < n")
         return NumTheory.expMod(msg, self.pubExponent, self.modulus)
 
     def RSAdecrypt(self, cText):
-        """Decryption side of RSA"""
-        """"This function will return (cText^exponent mod modulus) and you *must*"""
-        """ use the expMod() function"""
-        """You will need to complete this function."""
+        """RSA decryption: m = c^d mod n"""
         return NumTheory.expMod(cText, self.privExponent, self.modulus)
 
     def AESdecrypt(self, cText):
@@ -94,16 +95,14 @@ class RSAServer(object):
         self.nonce = int.from_bytes(hash.digest()[:2], byteorder=sys.byteorder)
 
     def findE(self, phi):
-        """Method to randomly choose a good e given phi"""
-        """You will need to complete this function."""
+        """Select a random e such that gcd(e,phi)=1."""
         while True:
             e = random.randint(3, phi-1)
             if NumTheory.gcd_iter(e, phi) == 1:
                 return e
 
     def genKeys(self, p, q):
-        """Generates n, phi(n), e, and d"""
-        """You will need to complete this function."""
+        """Generate RSA modulus n, phi(n), e, and private key d."""
         self.modulus = p * q
         phi = (p - 1) * (q - 1)
 
@@ -123,14 +122,13 @@ class RSAServer(object):
         return status
 
     def nonceVerification(self, decryptedNonce):
-        """Verifies that the transmitted nonce matches that received
-        from the client."""
-        """You will need to complete this function."""
+        """Check if client-returned nonce matches original."""
         return decryptedNonce == self.nonce
 
 
     def start(self):
-        self.genKeys(p, q)
+        self.genKeys(self.p, self.q)
+        
         print("Server started...")
 
         while True:
@@ -152,11 +150,14 @@ class RSAServer(object):
             encKey = int(parts[2])
             encNonce = int(parts[3])
 
+            # Decrypt session key using RSA
             sessionKey = self.RSAdecrypt(encKey)
+            
             self.sessionKey = sessionKey
 
             decryptedNonce = self.AESdecrypt(encNonce)
 
+            # Validate nonce
             if not self.nonceVerification(decryptedNonce):
                 self.send(connSocket, "400 Error")
                 self.close(connSocket)
@@ -183,7 +184,6 @@ class RSAServer(object):
             break
 
 def main():
-    """Driver function for the project"""
     args = sys.argv
     if len(args) != 2:
         print ("Please supply a server port.")
@@ -194,7 +194,7 @@ def main():
     if PORT < 1023 or PORT > 65535:
         print("Invalid port specified.")
         sys.exit()
-    print("Server of ________")
+    print("Server of Cajaun")
     print ("""Enter prime numbers. One should be between 211 and 281,
     and the other between 229 and 307. The product of your numbers should
     be less than 65536""")
