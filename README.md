@@ -1,209 +1,83 @@
-# School Workspace — Comprehensive Coursework Portfolio
+# School Workspace
 
-![Languages](https://img.shields.io/badge/Languages-Java%20%7C%20Python%20%7C%20HTML%2FCSS%20%7C%20JS-blue?style=for-the-badge)
-![Projects](https://img.shields.io/badge/Projects-50%2B-success?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
-![University](https://img.shields.io/badge/University-Assignments-orange?style=for-the-badge)
+This workspace organizes coursework from Cajaun Campbell’s computer science studies at The University of the West Indies. The source is grouped by language, course, project, lab, and examination material.
 
----
+## Documentation
 
-This repository contains all coursework, labs, tutorials, assignments, and full-scale projects completed across multiple Computer Science courses.  
-It spans **Java**, **Python**, **HTML/CSS/JS**, and **Net-Centric/Computing**, forming a complete coursework portfolio.
+The [documentation index](docs/README.md) owns the detailed material. Each major area keeps its build commands, file map, and usage notes in its local README.
 
----
+| Area | Start here |
+| --- | --- |
+| C coursework | [C index](C/README.md) |
+| HTML coursework | [HTML index](Html/README.md) |
+| Java coursework | [Java index](Java/README.md) |
+| Python coursework | [Python index](Python/README.md) |
+| Documentation rules | [Documentation index](docs/README.md) |
 
-## Folder Structure
+## Workspace Shape
 
-```
-school-workspace
-│── Html/          → COMP1220 (web development)
-│── Java/          → COMP1161 (OOP, GUIs, simulations)
-│── Python/        → COMP1126, COMP1127, COMP2190, COMP2211 (programming foundations through advanced practice)
-```
+~~~text
+Client or terminal
+        |
+        v
+Course folder -> source files -> language toolchain -> local output
+        |
+        +--> C and COMP3101 Makefiles
+        +--> Java and COMP1161 project folders
+        +--> Python course scripts
+        +--> HTML, CSS, JavaScript, and image assets
+~~~
 
----
+The workspace has no root-level build command. Each course uses its own source layout, compiler, runtime, test data, and generated output.
 
-# HTML — COMP1220
+## Local Development
 
-### Web Development Project
+Build or run work from the folder that owns it:
 
-Includes:
+~~~bash
+# c
+cd C/COMP3101/assignment-1
+make
+./myshell
 
-- `index.html`, `index.css`, `index.js`
-- Image assets
+# java
+cd Java/COMP1161/project-1
+javac *.java
+java Driver
 
-Focus:
+# python
+python3 Python/COMP1126/week-3/tutorial/test.py
 
-- Responsive layouts
-- Clean UI
-- DOM scripting
+# web
+python3 -m http.server 8000 --directory Html/COMP1220
+~~~
 
----
+The local README beside a project takes precedence over these general commands when it defines extra data, libraries, or working-directory requirements.
 
-# Java — COMP1161
+## Tests and Quality
 
-## Exam Solutions
+The C Makefiles compile with C11 and enable `-Wall`, `-Wextra`, and `-Wpedantic`. Java and Python work use folder-level compilation or direct script execution. The static site uses a local HTTP server for browser checks.
 
-Covers:
+There is no shared test runner for the complete workspace. Run the checks documented by the README in the folder under review.
 
-- **April 2024**
-- **July 2017**
-- **July 2023**
-- **May 2017**
-- **May 2018**
-- **May 2023**
+## Repository Layout
 
-Complete class implementations:
+~~~text
+C/          COMP3101 process and shell work
+Html/       COMP1220 static web work
+Java/       COMP1161 object-oriented programming work
+Python/     COMP1126, COMP1127, COMP2190, and COMP2211 work
+docs/       documentation index and repository guidance
+~~~
 
-- Academic systems (`HighSchool`, `UWIStudent`)
-- Payroll & HR hierarchies
-- Shapes/geometry
-- Utility simulations
+Some coursework folders preserve compiled files, archives, generated documentation, test fixtures, packaged applications, and copied submission files. The local README identifies those artifacts and explains which files belong to the runnable source.
 
----
+Generated cache directories such as `__pycache__` do not own source workflows. Their parent README documents the source that produced them.
 
-## Project 1 — Crime & Community Simulation
+## Documentation Rules
 
-Features:
+Keep commands in the README that owns the relevant workflow. Link to that page when another README needs the same command or policy. Keep descriptions tied to files that exist in the folder.
 
-- `Community`, `Criminal`, `SOE`, `ZOSO`, `Raid`
-- Data-driven simulations
-- Multiple test files
-- BlueJ package
+## Academic Use
 
----
-
-## Project 2 — National Bus Planning System
-
-Includes:
-
-- Bus hierarchy (`PartyBus`, `SportsBus`, `TrainingBus`)
-- `Planner`, `Plan`, `Trip`
-- GUI screens: `EntryScreen`, `ReportScreen`
-- 40+ testcases
-- Full Javadoc documentation website
-
----
-
-## Project 3 — GPA & Academic Records Manager
-
-Includes:
-
-- JSON-backed dataset
-- GUI using FlatLaf
-- XChart graphs
-- Exportable `.jar` build
-- Screens for Adding, Editing, Viewing Students
-
----
-
-# Weekly Labs (Java)
-
-Covers Weeks 2–10:
-
-- Inheritance
-- Interfaces
-- Exception handling
-- File I/O
-- FreeTTS speech engine
-- Smart Home Simulation
-- Transport Con Contractor
-
----
-
-# Python — COMP1126 (Intro to Computing I)
-
-Includes:
-
-- Hackerrank solutions
-- Lab submissions (`Lab0 → Lab5`)
-- Tutorials with exercises
-- Foundational Python:
-  - loops, functions, conditions
-  - dictionaries, lists
-  - recursion
-  - simple file processing
-
----
-
-# Python — COMP1127 (Intro to Computing II)
-
-Includes:
-
-- Exam prep (2017–2023)
-- Data structures packet:
-  - Stacks
-  - Queues
-  - Binary Trees
-  - Recursion
-  - Search/sort algorithms
-- Labs for Weeks 8–12
-- Tutorials & practice problems
-
----
-
-# COMP2190 — Net-Centric Computing
-
-## Project 1 — RSA Client/Server System
-
-- Secure message passing
-- Number theory utilities
-- Ciphertext/Plaintext generation
-- Documentation PDF
-
-## Project 2 — PGP & AES Encryption Suite
-
-- Simplified AES
-- RSA signing
-- Public key distribution (`.asc` files)
-- Encrypted messages (`message.asc`)
-- Full secure email simulation
-
----
-
-# Python — COMP2211 (Advanced Programming I)
-
-Includes:
-
-- Weekly modules `week-1` through `week-8`
-- Weekly Hackerrank problem sets with real coding practice
-- Core concepts: control flow, iteration, recursion, time complexity, and statistics
-- Example exercises:
-  - `rng_statistics.py`, `hop_squash.py`, `secret_codes.py`
-  - `assembly_operations.py`, `bad_blockchain.py`, `treasure_islands.py`
-
----
-
-# How to Use This Workspace
-
-### Java
-
-```
-javac FileName.java
-java FileName
-```
-
-### Python
-
-```
-python3 script.py
-```
-
-### Web
-
-Open `index.html` in a browser.
-
----
-
-# Author
-
-**Cajaun Campbell**  
-Academic Coursework Portfolio
-
----
-
-# License
-
-This workspace is academic; redistribution is not permitted without permission.
-
----
+This workspace stores academic coursework and study material. Ask the author before redistributing its source code or submitted work.
