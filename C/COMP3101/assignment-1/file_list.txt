@@ -1,0 +1,19 @@
+total 224
+-rw-r--r--@ 1 cajaun  staff   6258 Sep 26 10:31 executor.c
+-rw-r--r--@ 1 cajaun  staff    195 Sep 26 10:27 executor.h
+-rw-r--r--@ 1 cajaun  staff   4224 Oct 26 08:09 executor.o
+-rw-r--r--@ 1 cajaun  staff      0 Oct 26 08:10 file_list.txt
+-rw-r--r--@ 1 cajaun  staff    691 Sep 26 10:31 input.c
+-rw-r--r--@ 1 cajaun  staff    138 Sep 26 10:27 input.h
+-rw-r--r--@ 1 cajaun  staff   1384 Oct 26 08:09 input.o
+-rw-r--r--@ 1 cajaun  staff    336 Sep 26 10:28 Makefile
+-rwxr-xr-x@ 1 cajaun  staff  35656 Oct 26 08:09 myshell
+-rw-r--r--@ 1 cajaun  staff   1101 Sep 26 10:28 myshell.c
+-rw-r--r--@ 1 cajaun  staff   1592 Oct 26 08:09 myshell.o
+-rw-r--r--@ 1 cajaun  staff   6094 Sep 26 10:31 parser.c
+-rw-r--r--@ 1 cajaun  staff    579 Sep 26 10:27 parser.h
+-rw-r--r--@ 1 cajaun  staff   3696 Oct 26 08:09 parser.o
+-rw-r--r--@ 1 cajaun  staff   2803 Sep 26 10:31 path_resolver.c
+-rw-r--r--@ 1 cajaun  staff     98 Sep 26 10:27 path_resolver.h
+-rw-r--r--@ 1 cajaun  staff   2248 Oct 26 08:09 path_resolver.o
+-rw-r--r--@ 1 cajaun  staff   1203 Sep 26 10:49 README.md

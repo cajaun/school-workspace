@@ -7,8 +7,10 @@ This course folder contains the Assignment 1 shell implementation and the Lab 1 
 | Work | Scope | Guide |
 | --- | --- | --- |
 | Assignment 1 | Command parsing, PATH lookup, process execution, redirection, and one pipe | [assignment README](assignment-1/README.md) |
+| Assignment 2 | Recursive Fibonacci, process creation, interval timers, and process profiling | [assignment README](assignment-2/README.md) |
 | Lab 1 | Basic C output and command-line arguments | [lab 1 folder](lab-1/) |
 | Lab 3 | `fork`, process identifiers, `execl`, and `wait` | [lab 3 folder](lab-3/) |
+| Midterm review | `fork`, `exec`, `wait`, `exit`, pipes, shared memory, and circular buffers | [midterm review folder](midterm-review/) |
 
 ## Toolchain
 
