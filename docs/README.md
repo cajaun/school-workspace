@@ -19,6 +19,9 @@ Use this index to find the page that owns a topic. The root README keeps the wor
 - [COMP2190 project index](../Python/COMP2190/README.md)
 - [COMP2190 Project 1](../Python/COMP2190/project-1/README.md)
 - [COMP2190 Project 2](../Python/COMP2190/project-2/README.md)
+- [COMP3220 course index](../Python/COMP3220/README.md)
+- [COMP3220 Assignment 2](../Python/COMP3220/assignment-2/README.txt)
+- [COMP3220 Assignment 4](../Python/COMP3220/assignment-4/README.md)
 
 ## Weekly Work
 

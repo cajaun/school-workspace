@@ -66,7 +66,7 @@ There is no shared test runner for the complete workspace. Run the checks docume
 C/          COMP3101 process and shell work
 Html/       COMP1220 static web work
 Java/       COMP1161 object-oriented programming work
-Python/     COMP1126, COMP1127, COMP2190, and COMP2211 work
+Python/     COMP1126, COMP1127, COMP2190, COMP2211, and COMP3220 work
 docs/       documentation index and repository guidance
 ~~~
 

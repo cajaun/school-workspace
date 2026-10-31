@@ -8,6 +8,7 @@ This directory holds C work for COMP3101. The course material focuses on command
 | --- | --- |
 | COMP3101 | [course index](COMP3101/README.md) |
 | Assignment 1 | [modular shell](COMP3101/assignment-1/README.md) |
+| Assignment 2 | [process timing](COMP3101/assignment-2/README.md) |
 | Lab 1 | [basic C programs](COMP3101/lab-1/) |
 | Lab 3 | [process exercises](COMP3101/lab-3/) |
 
