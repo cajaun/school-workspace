@@ -1,57 +1,142 @@
-COMP3220 maze solver
-====================
+# COMP3220 Maze Lab
 
-This project solves a grid maze with breadth-first search, depth-first search,
-and A* search. The search functions stay in maze_solver.py so they can run
-without opening a graphics window. visualization.py draws their returned search
-trace and final path with turtle.
+Maze Lab solves grid mazes with breadth-first search, depth-first search, and A* search. You can run each search in a pixel-art desktop view. The maze displays explored cells, the route appears in yellow, and the side panel reports search statistics.
 
-requirements
-------------
+The program keeps the assignment maze in `maze_data.py`. The solver functions read that maze and return their results without changing its cells. The app then uses those results to animate the run.
+
+## Requirements
 
 - Python 3.10 or newer
-- A desktop session that supports tkinter and turtle
+- Tkinter for the desktop window
+- Pillow for the pixel-font renderer
 
-run the tests
--------------
+The project keeps an original turtle renderer in `visualization.py` for comparison.
 
-From this directory, run:
+## Install
 
-    python3 -m unittest -v
+Open a terminal in this directory and install Pillow:
 
-run the visualizer
-------------------
+```bash
+python3 -m pip install -r requirements.txt
+```
 
-Run the interactive version:
+## Run the app
 
-    python3 main.py
+Start Maze Lab with:
 
-Choose bfs, dfs, astar, or all when prompted. Enter a delay in seconds to
-control the animation speed. This speed control is the creative enhancement.
+```bash
+python3 main.py
+```
 
-You can also select a mode from the command line:
+The app opens a fixed 1280 by 840 window. Use the mouse or keyboard to move through the menus.
 
-    python3 main.py --algorithm bfs --delay 0.04
-    python3 main.py --algorithm dfs --delay 0.04
-    python3 main.py --algorithm astar --delay 0.04
-    python3 main.py --algorithm all --delay 0.04
+### Controls
 
-project layout
---------------
+- `up` and `down` move through the main menu and solver list
+- `enter` confirms the highlighted choice
+- `space` pauses or resumes a run
+- `escape` returns to the main menu
+- mouse movement highlights clickable controls
+- mouse clicks activate controls
 
-- maze_solver.py contains the required bfs, dfs, and astar functions
-- maze_data.py stores the required benchmark maze
-- visualization.py renders search results with turtle
-- main.py provides the command line interface
-- test_maze_solver.py checks correctness without graphics
+## Use the interface
 
-The benchmark comparison must use the maze in maze_data.py without changing
-its cells. Each solver returns a path, a visited order, and statistics with
-nodes_expanded, path_length, and path_cost keys. The handout expects the
-benchmark path_length to be 15, which counts the 15 cells in the returned path.
-The corresponding unit-cost path_cost is 14 moves.
+Choose `start` to select one search strategy. Choose `compare` to run BFS, DFS, and A* on the same maze.
 
-ai disclosure
--------------
+The options screen lets you choose:
 
-AI assistance was used for code structure, implementation support, and code review. The author reviewed and tested the submitted code.
+- `assignment maze`, which preserves the handout layout
+- `training grounds`, a compact generated maze
+- `the labyrinth`, a larger generated maze
+- `slow`, `steady`, or `turbo` animation pace
+- `canopy`, `moon`, or `ember` color palette
+- search trail visibility
+
+The mode preview shows the selected strategy and its route on the active maze. During a run, the route map shows the search trace and the side panel reports expanded nodes, route length, moves, and pace.
+
+## Run the tests
+
+Run the full test suite from this directory:
+
+```bash
+python3 -m unittest -v
+```
+
+The tests check solver correctness, path statistics, input validation behavior, maze immutability, generated maze connectivity, and preset dimensions.
+
+You can check every Python file for syntax errors with:
+
+```bash
+python3 -m py_compile *.py
+```
+
+## Solver contract
+
+Each solver accepts:
+
+```python
+path, visited_order, stats = algorithm(maze, start, goal)
+```
+
+The maze uses these cell values:
+
+- `1` marks a wall
+- `0` marks an open cell
+- `S` marks the start
+- `G` marks the goal
+
+The returned values mean:
+
+- `path` contains the route from start to goal, including both endpoints
+- `visited_order` records the order in which the algorithm expands cells
+- `stats["nodes_expanded"]` counts expanded cells
+- `stats["path_length"]` counts cells in the returned route
+- `stats["path_cost"]` counts unit-cost moves
+
+For the benchmark maze, BFS and A* return a path length of 15 and a path cost of 14. DFS returns a valid route and may explore the maze in a different order.
+
+## Project structure
+
+```text
+assignment-2/
+├── app.py                  desktop state, navigation, and animation
+├── assets/
+│   └── PressStart2P.ttf    bundled pixel typeface
+├── main.py                 application entry point
+├── maze_data.py            assignment maze and endpoint data
+├── maze_generator.py       connected practice-maze generation
+├── maze_solver.py          BFS, DFS, A*, validation, and statistics
+├── pixel_screens.py        screen layouts rendered from explicit state
+├── pixel_ui.py             pixel canvas, text, panels, buttons, and targets
+├── requirements.txt        Python package requirements
+├── test_maze_generator.py  generated-maze tests
+├── test_maze_solver.py     solver tests
+├── ui_theme.py             palettes, labels, presets, and pace settings
+└── visualization.py        original turtle renderer
+```
+
+The modules follow one direction of responsibility. `maze_solver.py` handles search. `maze_generator.py` creates optional practice layouts. `pixel_ui.py` handles drawing primitives and input targets. `pixel_screens.py` turns application state into screen layouts. `app.py` coordinates navigation and animation.
+
+## Design decisions
+
+The solver code stays independent from Tkinter, Pillow, and turtle. Tests can call BFS, DFS, and A* without opening a window. The app receives the solver results and controls how each result appears on screen.
+
+The benchmark maze remains separate from generated mazes. This keeps the assignment data stable while the options screen supports practice layouts.
+
+The pixel renderer uses one design coordinate system and one bundled typeface. Each screen uses the same panel, button, text, and maze primitives, so selections, spacing, hover states, and typography stay consistent across the app.
+
+## Troubleshooting
+
+If Pillow is missing, run the install command:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+If the window does not open, confirm that Python can access Tkinter on your system. macOS users can test the module with:
+
+```bash
+python3 -m tkinter
+```
+
+Run the tests from the assignment directory so Python can import the project modules.
